@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title%} index {% endblock %}
+{%block content%}
+<div class="row gap-3 p-3" >
+    {%for i in data%}
+    <div class="card col-3 p-0  m-auto" style="width: 16rem;">
+        <img src="{{i.strMealThumb}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{i.strMeal}}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

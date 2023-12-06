@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h3><a href="/">Home</a></h3>
+    <h3><a href="/navigation/about/">Navigation About</a></h3>
+    <h3><a href="/navigation/contact/">Navigation Contact</a></h3><br><br>
+
+    <h1>{{name}}</h1>
+    <!-- length dibe string and list er o  -->
+    <h1>{{name | length}}</h1>
+    <!-- string hle concat hbe r int hle jog hbe -->
+    <h1>{{name | add:'2'}}</h1> 
+    <h1>{{age | add:'2'}}</h1>
+    <!-- quotation takle tar age slash dbe -->
+    <h1>{{quote | addslashes}}</h1>
+    <!-- 1st word capital korbe -->
+    <h1>{{name | capfirst}}</h1>
+    <!-- ja bad dite chaibo ta likle oi value theke ta bad jabe -->
+    <h1>{{name | cut:'a'}}</h1>
+    <!-- jdi value empty string  hou tahole default er vitore ja dbo ta hbe -->
+    <h1>{{nothing | default:'noo'}}</h1>
+    <!-- dictionary jdi sort korte hoy -->
+    <h3>{{ value | dictsort:'age'}}</h3>
+    <!-- divisible hle true print hbe nahoole false -->
+    <h2>{{age | divisibleby:"4"}}</h2>
+    <h3>{{ name | escape}}</h3>
+    <h3>{{ 123456789 | filesizeformat}}</h3>
+    <!-- list er 1sst value show korabe -->
+    <h2>{{value | first}}</h2>
+    <!-- list er item gula join korau -->
+    <h2>{{value | join:"??"}}</h2>
+    <!-- list er last value show korabe -->
+    <h2>{{value | last}}</h2>
+    <!-- sob kisu small letter e niye jabe  -->
+    <h2>{{quote | lower}}</h2>
+    <h2>{{name | make_list}}</h2>
+    <!-- ekek time e ekem random word dbe  -->
+    <h2>{{name | random}}</h2>
+    <!-- python er string slice er mto  -->
+    <h2>{{name | slice:'1:3'}}</h2>
+    <h2>{{quote | slugify}}</h2>
+    <h3>{{  quote | title }}</h3>
+    <h3>{{  unorder | unordered_list }}</h3>
+    <h3>{{  name | upper }}</h3>
+    <!-- just string er word count  dbe  -->
+    <h3>{{ quote  | wordcount}}</h3>
+
+
+
+
+</body>
+</html>
