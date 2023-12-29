@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<a href="{% url 'chng_pass' %}" class="btn btn-info">Change your Password with old password</a>
+<a href="{% url 'chng_pass_without' %}" class="btn btn-info">Set your password</a>
+
+{% endblock content %}
